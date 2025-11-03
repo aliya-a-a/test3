@@ -1,0 +1,19 @@
+Процедура СоздатьНовыйТовар()
+    // Создаём новый элемент справочника
+    НовыйТовар = Справочники.Товары.СоздатьЭлемент();
+    // Заполняем реквизиты
+    НовыйТовар.Наименование = "Ноутбук HP ProBook";
+    НовыйТовар.Артикул = "HP-12345";
+    НовыйТовар.Цена = 75000;
+    НовыйТовар.ЕдиницаИзмерения = Перечисления.ЕдиницыИзмерения.шт;
+    // Записываем изменения в базу данных
+    НовыйТовар.Записать();
+    // Получаем ссылку на созданный элемент
+    СсылкаНаТовар = НовыйТовар.Ссылка;
+    Сообщить("Создан новый товар: " + СсылкаНаТовар);
+КонецПроцедуры
+``` [2](https://sky.pro/wiki/profession/yazyk-programmirovaniya-1s-primer-koda-i-obuyasnenie/)
+
+Этот код создаёт новый элемент в справочнике «Товары», заполняет его свойства и сохраняет в базе данных. [2](https://sky.pro/wiki/profession/yazyk-programmirovaniya-1s-primer-koda-i-obuyasnenie/) 
+
+Больше примеров кода и информации о языке 1С можно найти на сайтах: sky.pro, itcodik.com, thecode.media. [2](https://sky.pro/wiki/profession/yazyk-programmirovaniya-1s-primer-koda-i-obuyasnenie/)[3](https://itcodik.com/article/osnovy-sintaksisa-yazyka-1s-predpriyatie-s-primerami-i-razborom)[1](https://thecode.media/10-1s/)
